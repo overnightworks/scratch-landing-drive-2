@@ -1,0 +1,7 @@
+claim_id = "27f7979105474bee9b50092ccd140aff"
+agent = "Claude f0f93976-3575-4ba8-ab7c-4907c85ae738"
+role = "builder"
+base = "9f2b42d36b5629a8bfee52902166528f06e0ca87"
+branch = "fix/green-behind"
+scope = ["green-behind.txt"]
+opened_commit = "b47e132dcdfa671f6ebe955f4dab57ab59f9d607"
