@@ -1,0 +1,17 @@
+name: check
+on:
+  pull_request:
+  merge_group:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show event
+        env:
+          EVENT: ${{ toJson(github.event) }}
+        run: echo "$EVENT"
+      - name: Fail in queue
+        run: |
+          if [ "${{ github.event_name }}" = "merge_group" ] && [ -e fail-in-queue ]; then exit 1; fi
+          exit 0
