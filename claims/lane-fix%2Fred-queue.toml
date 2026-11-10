@@ -1,7 +1,0 @@
-claim_id = "e0f053c3b5be4b3b950674d5e43955fc"
-agent = "Claude f0f93976-3575-4ba8-ab7c-4907c85ae738"
-role = "builder"
-base = "9f2b42d36b5629a8bfee52902166528f06e0ca87"
-branch = "fix/red-queue"
-scope = ["fail-in-queue"]
-opened_commit = "e8e750803ff489c85d60cdd6f30e0a1b922475cd"
